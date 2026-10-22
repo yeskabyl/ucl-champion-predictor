@@ -1,0 +1,67 @@
+class,bin,n,mean_predicted,observed_frequency,model,horizon,scope
+H,1,63,0.24826315008432473,0.31746031746031744,elo,one_step_ahead,test seasons
+H,2,63,0.38424937873669995,0.3492063492063492,elo,one_step_ahead,test seasons
+H,3,63,0.47939383510433065,0.4603174603174603,elo,one_step_ahead,test seasons
+H,4,63,0.570086796806054,0.5714285714285714,elo,one_step_ahead,test seasons
+H,5,62,0.711337524575638,0.8064516129032258,elo,one_step_ahead,test seasons
+D,1,63,0.15403729251955411,0.15873015873015872,elo,one_step_ahead,test seasons
+D,2,63,0.20285464790239408,0.12698412698412698,elo,one_step_ahead,test seasons
+D,3,63,0.2232964361737211,0.15873015873015872,elo,one_step_ahead,test seasons
+D,4,63,0.2345927815213661,0.1746031746031746,elo,one_step_ahead,test seasons
+D,5,62,0.23925644948151964,0.22580645161290322,elo,one_step_ahead,test seasons
+A,1,63,0.13254968432808475,0.031746031746031744,elo,one_step_ahead,test seasons
+A,2,63,0.22074504390967284,0.25396825396825395,elo,one_step_ahead,test seasons
+A,3,63,0.2907434483013394,0.31746031746031744,elo,one_step_ahead,test seasons
+A,4,63,0.37826481399932443,0.4444444444444444,elo,one_step_ahead,test seasons
+A,5,62,0.5380855341465105,0.6129032258064516,elo,one_step_ahead,test seasons
+H,1,198,0.2347430803502837,0.18686868686868688,elo,one_step_ahead,all rolling-origin folds (out-of-sample)
+H,2,197,0.3550966810326329,0.3096446700507614,elo,one_step_ahead,all rolling-origin folds (out-of-sample)
+H,3,197,0.44029421421276177,0.37055837563451777,elo,one_step_ahead,all rolling-origin folds (out-of-sample)
+H,4,197,0.5107214641063992,0.49746192893401014,elo,one_step_ahead,all rolling-origin folds (out-of-sample)
+H,5,197,0.5953521335698612,0.6192893401015228,elo,one_step_ahead,all rolling-origin folds (out-of-sample)
+H,6,197,0.7249238115630107,0.7817258883248731,elo,one_step_ahead,all rolling-origin folds (out-of-sample)
+D,1,198,0.15099761314203147,0.15656565656565657,elo,one_step_ahead,all rolling-origin folds (out-of-sample)
+D,2,197,0.19758996727527806,0.15736040609137056,elo,one_step_ahead,all rolling-origin folds (out-of-sample)
+D,3,197,0.21836171196843773,0.20304568527918782,elo,one_step_ahead,all rolling-origin folds (out-of-sample)
+D,4,197,0.23038145793792256,0.24873096446700507,elo,one_step_ahead,all rolling-origin folds (out-of-sample)
+D,5,197,0.23722423506165866,0.2233502538071066,elo,one_step_ahead,all rolling-origin folds (out-of-sample)
+D,6,197,0.24247594197787478,0.2182741116751269,elo,one_step_ahead,all rolling-origin folds (out-of-sample)
+A,1,198,0.12277287153919708,0.06060606060606061,elo,one_step_ahead,all rolling-origin folds (out-of-sample)
+A,2,197,0.201025517354295,0.20304568527918782,elo,one_step_ahead,all rolling-origin folds (out-of-sample)
+A,3,197,0.2627630571894507,0.26903553299492383,elo,one_step_ahead,all rolling-origin folds (out-of-sample)
+A,4,197,0.321817536935762,0.36548223350253806,elo,one_step_ahead,all rolling-origin folds (out-of-sample)
+A,5,197,0.40464921136201376,0.49238578680203043,elo,one_step_ahead,all rolling-origin folds (out-of-sample)
+A,6,197,0.5513043484209689,0.6395939086294417,elo,one_step_ahead,all rolling-origin folds (out-of-sample)
+H,1,63,0.2546152137598703,0.3333333333333333,elo,frozen_state,test seasons
+H,2,63,0.3888121419214,0.38095238095238093,elo,frozen_state,test seasons
+H,3,63,0.47482539190561524,0.49206349206349204,elo,frozen_state,test seasons
+H,4,63,0.5616190505490465,0.5555555555555556,elo,frozen_state,test seasons
+H,5,62,0.7072305421510064,0.7419354838709677,elo,frozen_state,test seasons
+D,1,63,0.15535880721814233,0.14285714285714285,elo,frozen_state,test seasons
+D,2,63,0.20475827211132946,0.14285714285714285,elo,frozen_state,test seasons
+D,3,63,0.2253516740896935,0.14285714285714285,elo,frozen_state,test seasons
+D,4,63,0.2352553460078602,0.2698412698412698,elo,frozen_state,test seasons
+D,5,62,0.23969160862883956,0.14516129032258066,elo,frozen_state,test seasons
+A,1,63,0.13526128048737882,0.06349206349206349,elo,frozen_state,test seasons
+A,2,63,0.2268536689569621,0.30158730158730157,elo,frozen_state,test seasons
+A,3,63,0.29441698913547604,0.25396825396825395,elo,frozen_state,test seasons
+A,4,63,0.3729227015611817,0.4603174603174603,elo,frozen_state,test seasons
+A,5,62,0.530607141553231,0.5806451612903226,elo,frozen_state,test seasons
+H,1,198,0.24475178336200715,0.20202020202020202,elo,frozen_state,all rolling-origin folds (out-of-sample)
+H,2,197,0.36719979379948475,0.29441624365482233,elo,frozen_state,all rolling-origin folds (out-of-sample)
+H,3,197,0.4418610883344559,0.39593908629441626,elo,frozen_state,all rolling-origin folds (out-of-sample)
+H,4,197,0.50602858143948,0.5076142131979695,elo,frozen_state,all rolling-origin folds (out-of-sample)
+H,5,197,0.5828520406601045,0.6091370558375635,elo,frozen_state,all rolling-origin folds (out-of-sample)
+H,6,197,0.7122475024692005,0.7563451776649747,elo,frozen_state,all rolling-origin folds (out-of-sample)
+D,1,198,0.15658907818968515,0.15151515151515152,elo,frozen_state,all rolling-origin folds (out-of-sample)
+D,2,197,0.20203326881362385,0.16751269035532995,elo,frozen_state,all rolling-origin folds (out-of-sample)
+D,3,197,0.22106216916897525,0.20812182741116753,elo,frozen_state,all rolling-origin folds (out-of-sample)
+D,4,197,0.2314702934467581,0.25888324873096447,elo,frozen_state,all rolling-origin folds (out-of-sample)
+D,5,197,0.23769874649024317,0.22842639593908629,elo,frozen_state,all rolling-origin folds (out-of-sample)
+D,6,197,0.24270311109973713,0.19289340101522842,elo,frozen_state,all rolling-origin folds (out-of-sample)
+A,1,198,0.12989303241723016,0.07575757575757576,elo,frozen_state,all rolling-origin folds (out-of-sample)
+A,2,197,0.20958888080834304,0.23857868020304568,elo,frozen_state,all rolling-origin folds (out-of-sample)
+A,3,197,0.2663807357477255,0.24873096446700507,elo,frozen_state,all rolling-origin folds (out-of-sample)
+A,4,197,0.32023219353115256,0.3350253807106599,elo,frozen_state,all rolling-origin folds (out-of-sample)
+A,5,197,0.3919319660334229,0.5126903553299492,elo,frozen_state,all rolling-origin folds (out-of-sample)
+A,6,197,0.5378552575692386,0.6192893401015228,elo,frozen_state,all rolling-origin folds (out-of-sample)

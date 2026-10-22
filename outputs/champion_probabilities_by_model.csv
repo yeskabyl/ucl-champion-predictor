@@ -1,0 +1,37 @@
+selected_model,team_id,team_name,p_elo,p_logistic_elo,p_poisson_elo,p_logistic,p_poisson,p_catboost,range_across_models
+elo,real-madrid,Real Madrid CF,0.1422,0.1705,0.1357,0.1023,0.0625,0.1622,0.10800000000000001
+elo,bayern-munchen,FC Bayern München,0.133,0.1599,0.1161,0.1,0.1046,0.0675,0.09239999999999998
+elo,paris-saint-germain,Paris Saint-Germain FC,0.1266,0.1494,0.1178,0.2528,0.2434,0.1655,0.135
+elo,liverpool,Liverpool FC,0.1193,0.1424,0.1143,0.1067,0.096,0.08,0.0624
+elo,manchester-city,Manchester City FC,0.0961,0.0978,0.0944,0.0548,0.0343,0.0746,0.0635
+elo,barcelona,FC Barcelona,0.0732,0.0736,0.0738,0.081,0.0933,0.0958,0.022599999999999995
+elo,arsenal,Arsenal FC,0.0672,0.0571,0.0634,0.183,0.1028,0.1748,0.1259
+elo,inter,FC Internazionale Milano,0.0602,0.0576,0.0634,0.0301,0.0352,0.0984,0.0683
+elo,borussia-dortmund,Borussia Dortmund,0.043,0.03,0.0419,0.0202,0.0295,0.0278,0.022799999999999997
+elo,chelsea,Chelsea FC,0.0329,0.022,0.0366,0.0134,0.0182,0.0146,0.0232
+elo,atletico-madrid,Club Atlético de Madrid,0.0244,0.0152,0.0283,0.0115,0.0501,0.0065,0.0436
+elo,napoli,SSC Napoli,0.0214,0.0113,0.0245,0.0073,0.0142,0.0052,0.0193
+elo,ajax,AFC Ajax,0.0108,0.0041,0.0129,0.0027,0.0035,0.0013,0.0116
+elo,juventus,Juventus FC,0.0102,0.0038,0.014,0.0022,0.0076,0.0026,0.0118
+elo,atalanta,Atalanta BC,0.0051,0.0014,0.007,0.013,0.0242,0.005,0.0228
+elo,benfica,Sport Lisboa e Benfica,0.005,0.0007,0.0067,0.0009,0.0063,0.001,0.006
+elo,tottenham-hotspur,Tottenham Hotspur FC,0.0048,0.0009,0.0071,0.0006,0.0076,0.0012,0.007
+elo,villarreal,Villarreal CF,0.0032,0.0005,0.0042,0.0061,0.0112,0.0104,0.0107
+elo,bayer-leverkusen,Bayer 04 Leverkusen,0.0028,0.0002,0.0039,0.0016,0.0048,0.0008,0.0046
+elo,paphos,Paphos FC,0.0028,0.0002,0.0027,0.0027,0.0084,0.0,0.0084
+elo,kairat,FK Kairat,0.0024,0.0002,0.0036,0.0017,0.0077,0.0,0.0077
+elo,bodo-glimt,FK Bodø/Glimt,0.0016,0.0002,0.0022,0.002,0.0071,0.0001,0.007
+elo,newcastle-united,Newcastle United FC,0.0015,0.0002,0.0031,0.0003,0.0038,0.0001,0.0037
+elo,monaco,AS Monaco FC,0.0012,0.0,0.0018,0.0002,0.001,0.0004,0.0018
+elo,psv,PSV,0.0012,0.0001,0.0037,0.0008,0.0043,0.0022,0.0042
+elo,union-saint-gilloise,Royale Union Saint-Gilloise,0.001,0.0,0.0028,0.0014,0.0076,0.0,0.0076
+elo,eintracht-frankfurt,Eintracht Frankfurt,0.0009,0.0003,0.0017,0.0,0.0006,0.0,0.0017
+elo,kobenhavn,FC København,0.0009,0.0001,0.0017,0.0,0.0012,0.0007,0.0017
+elo,slavia-praha,SK Slavia Praha,0.0009,0.0,0.0011,0.0001,0.0007,0.0,0.0011
+elo,athletic,Athletic Club,0.0008,0.0,0.0029,0.0,0.0032,0.0002,0.0032
+elo,qarabag,Qarabağ Ağdam FK,0.0008,0.0,0.0022,0.0,0.0002,0.0,0.0022
+elo,olympique-marseille,Olympique de Marseille,0.0007,0.0,0.0011,0.0,0.0019,0.0002,0.0019
+elo,brugge,Club Brugge KV,0.0006,0.0002,0.0011,0.0,0.0009,0.0002,0.0011
+elo,sporting-cp,Sporting Clube de Portugal,0.0006,0.0001,0.0015,0.0006,0.001,0.0005,0.0014
+elo,galatasaray,Galatasaray SK,0.0004,0.0,0.0003,0.0,0.0009,0.0002,0.0009
+elo,olympiakos,PAE Olympiakos SFP,0.0003,0.0,0.0005,0.0,0.0002,0.0,0.0005

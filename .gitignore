@@ -1,0 +1,22 @@
+# Secrets
+.env
+*.token
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Re-downloadable raw provider snapshots (provenance sidecars are regenerated with them)
+data/raw/
+
+# Tool output
+catboost_info/
+.DS_Store

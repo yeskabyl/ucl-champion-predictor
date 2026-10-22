@@ -1,0 +1,208 @@
+{
+  "run": {
+    "started_at": null,
+    "finished_at": "2026-10-22T18:12:58+00:00",
+    "git_commit": "7869d9c",
+    "seed": 42,
+    "n_sims": 10000
+  },
+  "forecast": {
+    "mode": "HISTORICAL_REPLAY",
+    "label": "HISTORICAL REPLAY of 2025/26 as of 2025-09-01 (uses only data before that date)",
+    "banner": "HISTORICAL REPLAY of 2025/26 as of 2025-09-01 - NOT a forecast of the current season",
+    "cutoff": "2025-09-01 00:00:00",
+    "target_season": 2025,
+    "is_live_forecast": false,
+    "league_matches_known": 0,
+    "league_matches_simulated": 144,
+    "known_knockout_legs": 0,
+    "knockout_draw_outcomes_consistent_with_data": 4096,
+    "team_notes": {
+      "bodo-glimt": "no earlier Champions League match in the data: default Elo rating, form unknown",
+      "kairat": "no earlier Champions League match in the data: default Elo rating, form unknown",
+      "paphos": "no earlier Champions League match in the data: default Elo rating, form unknown",
+      "union-saint-gilloise": "no earlier Champions League match in the data: default Elo rating, form unknown"
+    },
+    "mode_notes": [
+      "2026/27: only 0 of 144 league-phase fixtures found in the data (football-data.org token present: False). Official participants/fixtures unavailable. Falling back to HISTORICAL_REPLAY (clearly labelled; not a forecast of the current season)."
+    ],
+    "replay_check": {
+      "actual_champion": "Paris Saint-Germain FC",
+      "assigned_probability": 0.1266,
+      "rank_in_forecast": 3,
+      "caveat": "A single season cannot validate calibration; this is an anecdote, not evidence of accuracy."
+    },
+    "ci_interpretation": "ci95_low/ci95_high is a 95% Wilson score interval for the share of simulated tournaments won. It measures only the random error from using a finite number of simulations (it shrinks as n_sims grows). It does NOT include uncertainty about the match model, the ratings, or the unplayed draw, so the true forecast uncertainty is larger.",
+    "assumptions": [
+      "Ratings and form are frozen at the prediction cutoff and are not updated during a simulated tournament.",
+      "Scores are independent Poisson draws; extra time uses one third of the 90-minute rates; shoot-outs are a coin flip.",
+      "League-phase ties still level after the opponent-based criteria are broken at random (disciplinary record and club coefficient are not available).",
+      "The knockout draw is sampled uniformly from all outcomes consistent with the pairings already known; no other draw restrictions are modelled.",
+      "Monte Carlo intervals measure simulation noise only, not uncertainty in the match model."
+    ]
+  },
+  "data": {
+    "provenance": {
+      "season_source": {
+        "2011": "openfootball",
+        "2012": "openfootball",
+        "2013": "openfootball",
+        "2014": "openfootball",
+        "2015": "openfootball",
+        "2016": "openfootball",
+        "2017": "openfootball",
+        "2018": "openfootball",
+        "2019": "openfootball",
+        "2020": "openfootball",
+        "2021": "openfootball",
+        "2022": "openfootball",
+        "2023": "openfootball",
+        "2024": "openfootball",
+        "2025": "openfootball"
+      },
+      "unavailable": {
+        "openfootball:2026": "NotFoundError: openfootball has no file for season 2026/27 (https://raw.githubusercontent.com/openfootball/champions-league/master/2026-27/cl.txt)"
+      },
+      "seasons_not_loaded": [
+        2026
+      ],
+      "retrieved_at": {
+        "openfootball": "2026-10-22T17:19:47+00:00"
+      },
+      "validation": {
+        "n_rows": 1997,
+        "n_completed": 1997,
+        "n_fixtures": 0,
+        "duplicates_dropped": 0,
+        "dropped_invalid": 0,
+        "warnings": []
+      },
+      "parse_notes": [],
+      "dropped_other_stage_rows": {},
+      "token_configured": false
+    },
+    "n_matches_visible": 1997,
+    "n_completed": 1808,
+    "n_teams": 108,
+    "date_range": [
+      "2011-09-13 18:45:00",
+      "2026-05-30 16:00:00"
+    ]
+  },
+  "evaluation": {
+    "split": [
+      {
+        "split": "train",
+        "seasons": "2011/12, 2012/13, 2013/14, 2014/15, 2015/16, 2016/17, 2017/18, 2018/19, 2019/20, 2020/21",
+        "start": "2011-09-13 18:45:00",
+        "end": "2021-05-29 19:00:00",
+        "n_matches": 1244
+      },
+      {
+        "split": "validation",
+        "seasons": "2021/22, 2022/23",
+        "start": "2021-09-14 16:45:00",
+        "end": "2023-06-10 19:00:00",
+        "n_matches": 250
+      },
+      {
+        "split": "test",
+        "seasons": "2023/24, 2024/25",
+        "start": "2023-09-19 16:45:00",
+        "end": "2025-05-31 19:00:00",
+        "n_matches": 314
+      }
+    ],
+    "selected_model": "elo",
+    "selection_rule": "one_se",
+    "selection_table": [
+      {
+        "model": "elo",
+        "selection_log_loss": 0.9606655192552356,
+        "diff_vs_best": 0.0,
+        "se_of_diff": 0.0,
+        "within_1se_of_best": true,
+        "complexity": 1
+      },
+      {
+        "model": "logistic_elo",
+        "selection_log_loss": 0.961641383925707,
+        "diff_vs_best": 0.0009758646704712569,
+        "se_of_diff": 0.008284818049703681,
+        "within_1se_of_best": true,
+        "complexity": 2
+      },
+      {
+        "model": "poisson_elo",
+        "selection_log_loss": 0.9619404498115052,
+        "diff_vs_best": 0.0012749305562694284,
+        "se_of_diff": 0.0018639752728614146,
+        "within_1se_of_best": true,
+        "complexity": 3
+      },
+      {
+        "model": "poisson",
+        "selection_log_loss": 0.9631047226009359,
+        "diff_vs_best": 0.0024392033457001235,
+        "se_of_diff": 0.003997147516534939,
+        "within_1se_of_best": true,
+        "complexity": 6
+      },
+      {
+        "model": "logistic",
+        "selection_log_loss": 0.9649647282827467,
+        "diff_vs_best": 0.00429920902751095,
+        "se_of_diff": 0.008744097432267901,
+        "within_1se_of_best": true,
+        "complexity": 5
+      },
+      {
+        "model": "catboost",
+        "selection_log_loss": 0.9789693308859014,
+        "diff_vs_best": 0.018303811630665766,
+        "se_of_diff": 0.009572400427563172,
+        "within_1se_of_best": false,
+        "complexity": 7
+      }
+    ],
+    "selection_notes": [
+      "Selection basis: horizon-matched (frozen-state) rolling-origin folds for seasons <= 2022/23, 869 matches. The simulator freezes team state at the cutoff, so models are compared in exactly that setting; the test seasons were not used to choose.",
+      "With 869 selection matches, ['logistic_elo', 'poisson_elo', 'poisson', 'logistic'] cannot be statistically distinguished from 'elo' (difference within one standard error)."
+    ],
+    "caveats": [
+      "train=1244, validation=250, test=314 matches. A multiclass log-loss standard error on a few hundred matches is roughly 0.03-0.04, so model differences smaller than that are within noise.",
+      "The test period has fewer than 500 matches: treat its metrics as a rough health check, not a precise ranking of models.",
+      "Calibration bins hold only a few dozen matches each; reliability curves are indicative only."
+    ],
+    "reference_model_is_climatology": "'climatology' (class frequencies only) is the no-skill baseline in model_metrics.csv",
+    "horizons": {
+      "one_step_ahead": "features computed just before each match (normal match forecasting)",
+      "frozen_state": "features frozen at the start of the season = how the tournament simulator predicts; the model is selected on this horizon"
+    },
+    "calibration_note": "Calibration was measured on the test seasons only (outputs/calibration_table.csv); see ece in model_metrics.csv. With a few hundred matches per split these estimates are noisy."
+  },
+  "versions": {
+    "python": "3.12.15",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "sklearn": "1.9.1",
+    "scipy": "1.18.1",
+    "catboost": "1.2.10",
+    "matplotlib": "3.11.2",
+    "requests": "2.34.2"
+  },
+  "outputs_sha256": {
+    "matches": "dd2ac1eec9a2040cb93e0ae64531e6e49a54d580170c14fcc005f79c4fe91023",
+    "model_metrics": "472dc87f09cfad6efd89e26ea1351f03c65a42949e3ec38400b95c16cf05679b",
+    "champion_probabilities": "e694841bd98981e8da7d6120aadaad2be1567afbe5c2b2f5a9a635cdc6f8e0fa",
+    "qualification_probabilities": "3305a45121d5882ae985c48f01c10805c3cda99870d254241a87ec1aac69a249",
+    "final_standings_probabilities": "9f999349b7b1802a19c36ae0ca3ac87604b5ec13a30b41f5bf61079b07bf7bb3",
+    "champion_chart": "6eb534601b0b7e44b1b887c0734c11563f53de916b7949a0fa3adfa8690b46a0",
+    "calibration_table": "ff529d42ee07a17aac0268af1517006a26c3549ba5b0ad159a163b898d1d091e",
+    "calibration_chart": "1249d12755e651cbd828919c900cdbcdef14acb5451b9df814a28fae8a37ea23",
+    "elo_ratings": "ef09849aae256e5391493594ee8c686c7368cb02bb4d04b6c77a93ca5ef7c91c",
+    "model_artifact": "7565c0c55f420aa4331ce2e2cb209c85c13c98ee2748d132e2a8317610ee9877",
+    "champion_probabilities_by_model": "0a8c9fb0f84619b0923d3bf712781d941730adac882d6d1f5f26ee262dfaa9e2"
+  }
+}

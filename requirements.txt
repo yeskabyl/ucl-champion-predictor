@@ -1,0 +1,17 @@
+# Core
+pandas>=2.1
+numpy>=1.26
+requests>=2.31
+scikit-learn>=1.4
+scipy>=1.11
+matplotlib>=3.8
+tzdata>=2024.1
+
+# Optional stronger model (the pipeline runs without it)
+catboost>=1.2
+
+# Tests
+pytest>=8.0
+
+# Notebook execution (Colab already ships Jupyter; needed only for local / CI runs)
+# jupyter, nbclient, nbformat, ipykernel
